@@ -120,6 +120,10 @@
     position: relative;
 }
 
+.navbar-primary .has-submenu:hover > ul.sub-menu {
+    display: block;
+}
+
 .navbar-primary.collapsed .arrow-down {
     display: none;
 }
