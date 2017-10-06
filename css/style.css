@@ -25,7 +25,7 @@
 }
 
 .navbar-body {
-	padding: 15px 0 0;
+    padding: 15px 0 0;
 }
 
 .navbar-primary.collapsed {
@@ -52,8 +52,8 @@
     display: table-cell;
     vertical-align: middle;
     color: #fff;
-	font-family: 'Roboto', sans-serif;
-	font-weight: 100;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
 }
 
 .navbar-primary.collapsed {
@@ -73,15 +73,18 @@
 }
 
 .navbar-primary .menu-option .sub-menu {
+    transition: all 2s linear;
     margin: 0;
     padding: 5px 0;
-    overflow: hidden;
+    overflow: auto;
+    max-height: 470px;
     list-style: none;
     background-color: #fff;
     z-index: 5;
     position: relative;
     font-family: 'Roboto', sans-serif;
-	font-weight: 100;
+    font-weight: 100;
+    animation: submenu 250ms ease-in-out both;
 }
 
 .navbar-primary.collapsed .menu-option .sub-menu {
@@ -90,21 +93,23 @@
     padding: 15px 0;
     top: -1px;
     box-shadow: 1px 1px 2px 1px #ddd;
+    max-height: 470px;
+    overflow: auto;
 }
 
 .navbar-primary.collapsed .menu-option .sub-menu li {
-	padding: 0 15px;
+    padding: 0 15px;
 }
 
 .navbar-primary.collapsed .menu-option .sub-menu .menu-heading {
-	display: list-item;
-	color: #355861;
-	padding: 0 0 10px 30px;
+    display: list-item;
+    color: #355861;
+    padding: 0 0 10px 30px;
 }
 
 .navbar-primary.collapsed .menu-option .sub-menu .menu-heading:hover {
-	color: #355861;
-	background-color: transparent;
+    color: #355861;
+    background-color: transparent;
 }
 
 .navbar-primary .menu-option .sub-menu a {
@@ -113,7 +118,7 @@
 }
 
 .navbar-primary .menu-option .sub-menu li:hover {
-	background-color: #e9eeef;
+    background-color: #e9eeef;
 }
 
 .navbar-primary .has-submenu {
@@ -136,7 +141,7 @@
     border-right: 7px solid transparent;
     border-top: 7px solid #17212b;
     left: 111px;
-    top: 39px;
+    top: 44px;
     z-index: 8;
 }
 
@@ -170,37 +175,42 @@
 }
 
 .navbar-primary .nav-label {
-	position: absolute;
-	left: 100px;
+    position: absolute;
+    left: 100px;
 }
 
 .btn-expand-collapse {
-	position: absolute;
-	display: block;
-	left: 295px;
-	bottom:0;
-	width: 20px;
-	height: 100%;
-	background-color: #ddd;
-	color: grey;
-	font-size: 10px;
-	text-align: center;
-	transition: all 0.1s ease-in-out;
-	writing-mode: vertical-rl;
-	text-orientation: upright;
-	letter-spacing: 4px;
-	padding-right: 5px;
-	font-family: 'Roboto', sans-serif;
+    position: absolute;
+    display: block;
+    cursor: pointer;
+    left: 295px;
+    bottom:0;
+    width: 20px;
+    height: 100%;
+    background-color: #ddd;
+    color: grey;
+    font-size: 10px;
+    text-align: center;
+    transition: all 0.1s ease-in-out;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    letter-spacing: 4px;
+    padding-right: 5px;
+    font-family: 'Roboto', sans-serif;
     font-weight: 100;
 }
 
+.btn-expand-collapse:before {
+    content: 'COLLAPSE';
+}
+
 .btn-expand-collapse .fa {
-	font-size: 16px;
-	font-weight: 600;
+    font-size: 16px;
+    font-weight: 600;
 }
 
 .btn-expand-collapse:active {
-	background-color: #111;
+    background-color: #111;
 }
 
 .navbar-primary-menu,
@@ -224,8 +234,8 @@
     font-size: 12px;
     position: relative;
     font-family: 'Roboto', sans-serif;
-	font-weight: 100;
-	line-height: 2;
+    font-weight: 100;
+    line-height: 2;
 }
 
 .navbar-primary li a:hover,
@@ -244,6 +254,10 @@
     transition: all 0.1s ease-in-out;
 }
 
+.collapsedBtn:before {
+    content: 'EXPAND';
+}
+
 .submenu-expand-footer {
     padding: 25px 0 15px 20px;
 }
@@ -253,4 +267,16 @@
     bottom: 0;
     width: 100%;
     padding-bottom: 15px;
+}
+
+
+@keyframes submenu {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@media screen and (max-height: 700px) {
+    .navbar-primary li a {
+        padding: 0px 18px;
+    }
 }
