@@ -1,10 +1,12 @@
 /*utility css*/
-.hide {
-   display: none;
-}
 
-.navbar-primary a, .navbar-primary a:hover,
-.btn-expand-collapse, .btn-expand-collapse:hover  {
+.hide {
+    display: none;
+}
+.navbar-primary a,
+.navbar-primary a:hover,
+.btn-expand-collapse,
+.btn-expand-collapse:hover {
     text-decoration: none;
 }
 /*********** utility css end************/
@@ -23,55 +25,45 @@
     -moz-transition: all 0.1s ease-in-out;
     transition: all 0.1s ease-in-out;
 }
-
 .navbar-body {
     padding: 15px 0 0;
 }
-
 .navbar-primary.collapsed {
     overflow: visible;
 }
-
 .user-info {
     display: table;
     border-spacing: 0;
     border-collapse: collapse;
 }
-
 .user-info .user-img {
     width: 100px;
     text-align: center;
 }
-
 .user-info .user-img img {
     width: 60px;
 }
-
 .user-info .user-name,
-.user-info .user-details  {
+.user-info .user-details {
     display: table-cell;
     vertical-align: middle;
     color: #fff;
     font-family: 'Roboto', sans-serif;
     font-weight: 100;
 }
-
 .navbar-primary.collapsed {
     width: 100px;
 }
-
 .navbar-global .navbar-user > li > a,
 .user-info .user-details .user-mailId,
 .submenu-expand-footer {
     color: #fff;
 }
-
 .user-info .user-details .user-mailId {
     font-size: 12px;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
 }
-
 .navbar-primary .menu-option .sub-menu {
     transition: all 2s linear;
     margin: 0;
@@ -86,7 +78,6 @@
     font-weight: 100;
     animation: submenu 250ms ease-in-out both;
 }
-
 .navbar-primary.collapsed .menu-option .sub-menu {
     position: absolute;
     right: -197px;
@@ -96,47 +87,38 @@
     max-height: 460px;
     overflow: auto;
 }
-
 .navbar-primary.collapsed .menu-option .sub-menu li {
     padding: 0 15px;
 }
-
 .navbar-primary.collapsed .menu-option .sub-menu .menu-heading {
     display: list-item;
     color: #355861;
     padding: 0 0 10px 30px;
 }
-
 .navbar-primary.collapsed .menu-option .sub-menu .menu-heading:hover {
     color: #355861;
     background-color: transparent;
 }
-
 .navbar-primary .menu-option .sub-menu a {
     padding: 5px 18px;
     color: #343639;
 }
-
 .navbar-primary .menu-option .sub-menu li:hover {
     background-color: #e9eeef;
 }
-
 .navbar-primary .has-submenu {
     position: relative;
 }
-
 .navbar-primary .has-submenu:hover > ul.sub-menu {
     display: block;
 }
-
 .navbar-primary.collapsed .arrow-down {
     display: none;
 }
-
 .navbar-primary .arrow-down {
     position: absolute;
-    width: 0; 
-    height: 0; 
+    width: 0;
+    height: 0;
     border-left: 7px solid transparent;
     border-right: 7px solid transparent;
     border-top: 7px solid #17212b;
@@ -144,47 +126,41 @@
     top: -1px;
     z-index: 8;
 }
-
 .navbar-primary.collapsed .has-submenu:hover .arrow-right {
     position: absolute;
-    width: 0; 
+    width: 0;
     height: 0;
     border-top: 7px solid transparent;
-    border-bottom: 7px solid transparent; 
+    border-bottom: 7px solid transparent;
     border-left: 7px solid #17212b;
     left: 99px;
     top: 15px;
     z-index: 8;
 }
-
 .navbar-primary .has-submenu:hover:before {
     visibility: visible;
 }
-
-.navbar-primary.collapsed .nav-label, 
+.navbar-primary.collapsed .nav-label,
 .navbar-primary.collapsed .user-details {
     display: none;
     transition: all 0.1s ease-in-out;
 }
-
 .navbar-primary .fa {
     font-size: 20px;
     padding-left: 14px;
     width: 2em;
     text-align: center;
 }
-
 .navbar-primary .nav-label {
     position: absolute;
     left: 100px;
 }
-
 .btn-expand-collapse {
     position: absolute;
     display: block;
     cursor: pointer;
     left: 295px;
-    bottom:0;
+    bottom: 0;
     width: 20px;
     height: 100%;
     background-color: #ddd;
@@ -199,33 +175,27 @@
     font-family: 'Roboto', sans-serif;
     font-weight: 100;
 }
-
 .btn-expand-collapse:before {
     content: 'COLLAPSE';
 }
-
 .btn-expand-collapse .fa {
     font-size: 16px;
     font-weight: 600;
 }
-
 .btn-expand-collapse:active {
     background-color: #111;
 }
-
 .navbar-primary-menu,
 .navbar-primary li,
 .navbar-primary-menu-footer,
 .submenu-expand-footer {
-    margin:0; 
-    padding:0;
+    margin: 0;
+    padding: 0;
     list-style: none;
 }
-
 .navbar-primary-menu {
     margin-top: 20px;
 }
-
 .navbar-primary li a {
     display: block;
     padding: 8px 18px;
@@ -237,180 +207,142 @@
     font-weight: 100;
     line-height: 2;
 }
-
 .navbar-primary .menu-option:hover > a,
 .navbar-primary-menu-footer li:hover > a,
-.submenu-expand-footer li:hover > a  {
+.submenu-expand-footer li:hover > a {
     color: #8e8d36;
 }
-
-
 .navbar-primary li a:hover .submenu {
     display: block;
     max-height: 200px;
 }
-
 .collapsedBtn {
     left: 95px;
     transition: all 0.1s ease-in-out;
 }
-
 .collapsedBtn:before {
     content: 'EXPAND';
 }
-
 .submenu-expand-footer {
     padding: 25px 0 15px 20px;
 }
-
 .navbar-primary-menu-footer {
     position: absolute;
     bottom: 0;
     width: 100%;
     padding-bottom: 15px;
 }
-
-
 @keyframes submenu {
-  from {opacity: 0;}
-  to {opacity: 1;}
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
-
-
-
 @media screen and (max-height: 700px) {
     .navbar-body {
         padding: 5px 0 0;
     }
-
     .user-info .user-img img {
         width: 40px;
     }
-
-    .navbar-primary li a, .navbar-primary .menu-option .sub-menu a {
+    .navbar-primary li a,
+    .navbar-primary .menu-option .sub-menu a {
         padding: 5px 18px;
     }
-
     .navbar-primary li a,
     .user-info .user-details .user-mailId {
         font-size: 11px;
     }
-
     .user-info .user-name {
         font-size: 12px;
     }
-
     .navbar-primary .fa {
         font-size: 16px;
     }
-
     .navbar-primary.collapsed .menu-option .sub-menu {
         right: -185px;
         padding: 5px 0;
         max-height: 250px;
     }
-
     .navbar-primary.collapsed .has-submenu:hover .arrow-right {
         top: 4px;
     }
-
     .navbar-primary.collapsed .menu-option .sub-menu .menu-heading {
         padding: 0 0 6px 30px;
         font-size: 12px;
     }
-
     .navbar-primary-menu {
         margin-top: 10px;
     }
-
     .navbar-primary .menu-option .sub-menu {
         max-height: none;
     }
 }
-
 @media screen and (max-height: 500px) {
-
     .navbar-primary.collapsed {
         width: 50px;
     }
-
-
     .navbar-primary.collapsed .menu-option .sub-menu {
         right: -139px;
         padding: 5px 0;
         max-height: 180px;
     }
-
     .navbar-primary.collapsed .has-submenu:hover .arrow-right {
         left: 49px;
     }
-
     .user-info .user-img {
         width: 50px;
     }
-
-    .navbar-primary li a, .user-info .user-details .user-mailId {
+    .navbar-primary li a,
+    .user-info .user-details .user-mailId {
         font-size: 10px;
     }
-
     .navbar-primary .fa {
         font-size: 16px;
         padding-left: 9px;
     }
-
-    .navbar-primary li a, .navbar-primary .menu-option .sub-menu a {
+    .navbar-primary li a,
+    .navbar-primary .menu-option .sub-menu a {
         padding: 2px 0px;
     }
-
     .btn-expand-collapse,
     .collapsedBtn {
         width: 12px;
         font-size: 8px;
     }
-
     .btn-expand-collapse {
         left: 145px;
     }
-
     .collapsedBtn {
         left: 45px;
     }
-
-
     .btn-expand-collapse .fa {
         font-size: 9px;
     }
-
     .navbar-primary {
         width: 150px;
     }
-
     .navbar-primary .nav-label {
         left: 50px;
     }
-
     .navbar-primary-menu {
         margin-top: 0;
     }
-
     .navbar-primary .arrow-down {
         left: 53px;
     }
-
     .navbar-primary .menu-option .sub-menu {
         padding: 5px 3px;
     }
-
     .submenu-expand-footer {
         padding: 25px 0 15px 5px;
     }
-
     .navbar-primary .fa {
         padding-left: 5px;
     }
-
 }
-
 @media screen and (min-height: 1300px) {
     max-height: 650px;
 }
